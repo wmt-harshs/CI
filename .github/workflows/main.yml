@@ -20,7 +20,7 @@ jobs:
         python-version: "3.8.10"
     - name: Install dependencies
       run: |
-        python -n pip install --upgrade pip
+        python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirement.txt ]; then pip install -r requirement.txt; fi
     - name: List with flake8
